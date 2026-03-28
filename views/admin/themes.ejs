@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Customizer</title>
+</head>
+<body>
+    <h1>Theme Customizer</h1>
+    <form>
+        <div>
+            <label for="server-name">Server Name:</label>
+            <input type="text" id="server-name" name="server-name" required>
+        </div>
+        <div>
+            <label for="primary-color">Primary Color:</label>
+            <input type="color" id="primary-color" name="primary-color" required>
+        </div>
+        <div>
+            <label for="theme-mode">Theme Mode:</label>
+            <select id="theme-mode" name="theme-mode">
+                <option value="light">Light</option>
+                <option value="dark">Dark</option>
+            </select>
+        </div>
+        <div>
+            <label for="server-description">Server Description:</label>
+            <textarea id="server-description" name="server-description"></textarea>
+        </div>
+        <div>
+            <button type="submit">Save Changes</button>
+        </div>
+    </form>
+    <h2>Live Theme Preview</h2>
+    <div id="live-preview" style="border: 1px solid #000; padding: 10px;">
+        <!-- Live preview will update here -->
+    </div>
+    <script>
+        // JavaScript to handle live preview and form submission can be added here.
+    </script>
+</body>
+</html>
